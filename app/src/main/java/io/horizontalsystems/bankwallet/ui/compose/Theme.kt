@@ -11,10 +11,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.Density
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 
 val lightPalette = Colors(
-    jacob = YellowL,
+    jacob = LagunaL,
     remus = GreenL,
     lucian = RedL,
     tyler = Light,
@@ -30,7 +31,7 @@ val lightPalette = Colors(
 )
 
 val darkPalette = Colors(
-    jacob = YellowD,
+    jacob = LagunaD,
     remus = GreenD,
     lucian = RedD,
     tyler = Dark,
@@ -56,7 +57,16 @@ fun ComposeAppTheme(
     } else {
         lightPalette
     }
-
+    val systemUiController = rememberSystemUiController()
+    if(darkTheme){
+        systemUiController.setSystemBarsColor(
+            color = darkPalette.tyler
+        )
+    }else{
+        systemUiController.setSystemBarsColor(
+            color = lightPalette.tyler
+        )
+    }
     //custom styles
     ProvideLocalAssets(colors = colors, typography = Typography()) {
         //material styles

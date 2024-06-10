@@ -67,7 +67,7 @@ class MainViewModel(
     private val items: List<MainNavigation>
         get() = if (marketsTabEnabled) {
             listOf(
-                MainNavigation.Market,
+                //MainNavigation.Market,
                 MainNavigation.Balance,
                 MainNavigation.Transactions,
                 MainNavigation.Settings,
@@ -215,13 +215,13 @@ class MainViewModel(
     }
 
     private fun getNavItem(item: MainNavigation, selected: Boolean) = when (item) {
-        MainNavigation.Market -> {
+        /*MainNavigation.Market -> {
             MainModule.NavigationViewItem(
                 mainNavItem = item,
                 selected = selected,
                 enabled = true,
             )
-        }
+        }*/
 
         MainNavigation.Transactions -> {
             MainModule.NavigationViewItem(
@@ -274,9 +274,9 @@ class MainViewModel(
     }
 
     private fun getLaunchTab(): MainNavigation = when (launchPage) {
-        LaunchPage.Market,
-        LaunchPage.Watchlist -> MainNavigation.Market
 
+        LaunchPage.Market,
+        LaunchPage.Watchlist,
         LaunchPage.Balance -> MainNavigation.Balance
         LaunchPage.Auto -> currentMainTab
     }
@@ -318,7 +318,7 @@ class MainViewModel(
                     }
                 }
 
-                tab = MainNavigation.Market
+                tab = MainNavigation.Balance
             }
 
             deeplinkString.startsWith("wc:") -> {

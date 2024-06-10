@@ -911,9 +911,9 @@
     <string name="Settings_Terms">Terms</string>
     <string name="Settings_Privacy">Privacy</string>
     <string name="Settings_ShareThisWallet">Tell Friends</string>
-    <string name="Settings_InfoTitleWithVersion" translatable="false">Unstoppable %s</string>
+    <string name="Settings_InfoTitleWithVersion" translatable="false">Cüzdan %s</string>
     <string name="Settings_InfoSubtitle" translatable="false">decentralized app</string>
-    <string name="Settings_CompanyName" translatable="false">horizontal systems</string>
+    <string name="Settings_CompanyName" translatable="false">CBDDO</string>
     <string name="Settings_Faq" translatable="false">FAQ</string>
     <string name="Settings_AppStatus">App Status</string>
     <string name="Settings_WalletConnect" translatable="false">WalletConnect</string>

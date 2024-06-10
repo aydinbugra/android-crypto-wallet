@@ -143,6 +143,7 @@ fun SearchBar(
             if (!searchMode) {
                 AppBarMenuButton(
                     icon = R.drawable.ic_search,
+                    tint = ComposeAppTheme.colors.jacob,
                     onClick = { searchMode = true },
                     description = stringResource(R.string.Button_Search),
                 )

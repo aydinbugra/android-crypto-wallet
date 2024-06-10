@@ -217,7 +217,7 @@ private fun MainScreen(
                         verticalAlignment = Alignment.Top
                     ) { page ->
                         when (uiState.mainNavItems[page].mainNavItem) {
-                            MainNavigation.Market -> MarketScreen(fragmentNavController)
+                            //MainNavigation.Market -> MarketScreen(fragmentNavController)
                             MainNavigation.Balance -> BalanceScreen(fragmentNavController)
                             MainNavigation.Transactions -> TransactionsScreen(
                                 fragmentNavController,

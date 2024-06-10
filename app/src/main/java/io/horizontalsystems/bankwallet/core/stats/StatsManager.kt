@@ -217,7 +217,7 @@ val MetricsType.statPage: StatPage
 
 val MainModule.MainNavigation.statTab: StatTab
     get() = when (this) {
-        MainModule.MainNavigation.Market -> StatTab.Markets
+        //MainModule.MainNavigation.Market -> StatTab.Markets
         MainModule.MainNavigation.Balance -> StatTab.Balance
         MainModule.MainNavigation.Transactions -> StatTab.Transactions
         MainModule.MainNavigation.Settings -> StatTab.Settings
